@@ -1,4 +1,4 @@
-# NestJS CQRS Microservices Starter Project.
+# NestJS CQRS Microservices Starter
 
 ## Description
 

@@ -1,8 +1,8 @@
 {
   "name": "nestjs-cqrs-starter",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "NestJS CQRS Microservices Starter",
+  "author": "Hardys",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
@@ -38,6 +38,8 @@
     "typeorm": "0.2.24"
   },
   "devDependencies": {
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
     "@nestjs/cli": "7.1.2",
     "@nestjs/schematics": "7.0.0",
     "@nestjs/testing": "7.0.7",
@@ -50,7 +52,9 @@
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.1",
     "eslint-plugin-import": "2.20.2",
+    "husky": "4.2.3",
     "jest": "25.2.7",
+    "lint-staged": "10.1.2",
     "prettier": "2.0.2",
     "supertest": "4.0.2",
     "ts-jest": "25.3.1",
@@ -79,6 +83,22 @@
     "moduleNameMapper": {
       "@hardyscc/common/(.*)": "<rootDir>/libs/common/src/$1",
       "@hardyscc/common": "<rootDir>/libs/common/src"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
