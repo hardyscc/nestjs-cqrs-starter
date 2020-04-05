@@ -1,0 +1,84 @@
+{
+  "name": "nestjs-cqrs-starter",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build",
+    "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint '{src,apps,libs,test}/**/*.ts' --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./apps/gateway/test/jest-e2e.json"
+  },
+  "dependencies": {
+    "@hardyscc/nestjs-event-store": "2.0.7",
+    "@nestjs/common": "7.0.7",
+    "@nestjs/core": "7.0.7",
+    "@nestjs/cqrs": "6.1.0",
+    "@nestjs/graphql": "7.2.0",
+    "@nestjs/platform-express": "7.0.7",
+    "@nestjs/typeorm": "7.0.0",
+    "apollo-server-express": "2.11.0",
+    "graphql": "14.6.0",
+    "graphql-tools": "4.0.7",
+    "mysql": "2.18.1",
+    "reflect-metadata": "0.1.13",
+    "rimraf": "3.0.2",
+    "rxjs": "6.5.5",
+    "type-graphql": "0.18.0-beta.10",
+    "typeorm": "0.2.24"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "7.1.2",
+    "@nestjs/schematics": "7.0.0",
+    "@nestjs/testing": "7.0.7",
+    "@types/express": "4.17.4",
+    "@types/jest": "25.2.1",
+    "@types/node": "13.11.0",
+    "@types/supertest": "2.0.8",
+    "@typescript-eslint/eslint-plugin": "2.26.0",
+    "@typescript-eslint/parser": "2.26.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.1",
+    "eslint-plugin-import": "2.20.2",
+    "jest": "25.2.7",
+    "prettier": "2.0.2",
+    "supertest": "4.0.2",
+    "ts-jest": "25.3.1",
+    "ts-loader": "6.2.2",
+    "ts-node": "8.8.2",
+    "tsconfig-paths": "3.9.0",
+    "typescript": "3.8.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": ".",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      ".+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "./coverage",
+    "testEnvironment": "node",
+    "roots": [
+      "<rootDir>/apps/",
+      "<rootDir>/libs/"
+    ],
+    "moduleNameMapper": {
+      "@hardyscc/common/(.*)": "<rootDir>/libs/common/src/$1",
+      "@hardyscc/common": "<rootDir>/libs/common/src"
+    }
+  }
+}
