@@ -8,7 +8,6 @@ A starter project which featuring advanced microservice pattern with GraphQL, ba
 
 - [GraphQL](https://graphql.org/)
 - [Apollo Federation](https://www.apollographql.com/docs/apollo-server/federation/introduction/)
-- [TypeORM](https://typeorm.io/)
 - [NestJS](https://docs.nestjs.com/)
 - [NestJS GraphQL](https://docs.nestjs.com/graphql/quick-start)
 - [NestJS Federation](https://docs.nestjs.com/graphql/federation)
@@ -32,7 +31,7 @@ npm install
 Start MySQL docker instance.
 
 ```bash
-docker run -d -e "MYSQL_ROOT_PASSWORD=Admin12345" -e "MYSQL_USER=usr" -e "MYSQL_PASSWORD=User12345" -e "MYSQL_DATABASE=development" -p 3306:3306 --name some-mysql bitnami/mysql:5.7.27
+docker run --name some-mysql -d -p 3306:3306 -e "MYSQL_ROOT_PASSWORD=Admin12345" -e "MYSQL_USER=usr" -e "MYSQL_PASSWORD=User12345" -e "MYSQL_DATABASE=development" bitnami/mysql:5.7.27
 ```
 
 Connect using MySQL docker instance command line.
