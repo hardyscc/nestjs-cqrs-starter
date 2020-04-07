@@ -34,7 +34,7 @@
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
     "rxjs": "6.5.5",
-    "type-graphql": "0.18.0-beta.15",
+    "type-graphql": "0.18.0-beta.16",
     "typeorm": "0.2.24"
   },
   "devDependencies": {
