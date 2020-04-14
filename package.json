@@ -29,7 +29,7 @@
     "@nestjs/typeorm": "7.0.0",
     "apollo-server-express": "2.12.0",
     "graphql": "14.6.0",
-    "graphql-tools": "4.0.7",
+    "graphql-tools": "5.0.0",
     "mysql": "2.18.1",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
