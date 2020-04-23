@@ -18,6 +18,7 @@ lerna-debug.log*
 /.nyc_output
 
 # IDEs and editors
+/.vscode
 /.idea
 .project
 .classpath
