@@ -24,7 +24,7 @@
     "@nestjs/common": "7.1.1",
     "@nestjs/core": "7.1.1",
     "@nestjs/cqrs": "7.0.0",
-    "@nestjs/graphql": "7.3.9",
+    "@nestjs/graphql": "7.4.0",
     "@nestjs/platform-express": "7.1.1",
     "@nestjs/typeorm": "7.0.0",
     "apollo-server-express": "2.13.1",
