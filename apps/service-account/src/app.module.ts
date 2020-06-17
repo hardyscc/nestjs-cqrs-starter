@@ -1,4 +1,4 @@
-import { NestjsEventStoreModule } from '@hardyscc/nestjs-event-store';
+import { EventStoreModule } from '@juicycleff/nestjs-event-store';
 import { Module } from '@nestjs/common';
 import { GraphQLFederationModule } from '@nestjs/graphql';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -14,7 +14,7 @@ const databaseUrl =
     GraphQLFederationModule.forRoot({
       autoSchemaFile: true,
     }),
-    NestjsEventStoreModule.forRoot({
+    EventStoreModule.register({
       tcpEndpoint: {
         host: 'localhost',
         port: 1113,

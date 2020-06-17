@@ -1,9 +1,9 @@
 import { UserActivatedEvent } from '@hardyscc/common/event/user-activated.event';
 import { UserCreatedEvent } from '@hardyscc/common/event/user-created.event';
 import {
+  EventStoreModule,
   EventStoreSubscriptionType,
-  NestjsEventStoreModule,
-} from '@hardyscc/nestjs-event-store';
+} from '@juicycleff/nestjs-event-store';
 import { Module } from '@nestjs/common';
 import { CqrsModule } from '@nestjs/cqrs';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -20,9 +20,8 @@ const Sagas = [CreateUserSaga];
 @Module({
   imports: [
     CqrsModule,
-    NestjsEventStoreModule.forFeature({
+    EventStoreModule.registerFeature({
       featureStreamName: '$svc-account',
-      subscriptionsDelay: 2000,
       subscriptions: [
         {
           type: EventStoreSubscriptionType.Persistent,
