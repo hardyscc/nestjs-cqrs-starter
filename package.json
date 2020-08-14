@@ -30,7 +30,7 @@
     "apollo-server-core": "2.16.1",
     "apollo-server-express": "2.16.1",
     "graphql": "15.3.0",
-    "graphql-tools": "6.0.16",
+    "graphql-tools": "6.0.18",
     "mysql": "2.18.1",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
