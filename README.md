@@ -109,7 +109,7 @@ mutation {
 OR
 
 ```bash
-curl -H 'Content-Type: application/json' \
+curl -X POST -H 'Content-Type: application/json' \
 -d '{"query": "mutation { createUser(input: { name: \"John\" }) { id name } }"}' \
 http://localhost:3000/graphql
 ```
@@ -154,6 +154,14 @@ query {
 }
 ```
 
+OR
+
+```bash
+curl -X POST -H 'Content-Type: application/json' \
+-d '{"query": "query { users { id name accounts { id name balance } } }"}' \
+http://localhost:3000/graphql
+```
+
 Output :
 
 ```json
@@ -175,3 +183,4 @@ Output :
   }
 }
 ```
+

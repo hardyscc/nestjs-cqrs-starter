@@ -15,6 +15,7 @@ const databaseUrl =
       autoSchemaFile: true,
     }),
     EventStoreModule.register({
+      type: 'event-store',
       tcpEndpoint: {
         host: 'localhost',
         port: 1113,

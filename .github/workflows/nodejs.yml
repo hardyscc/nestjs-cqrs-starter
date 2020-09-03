@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
+      - run: npm install # cannot use 'npm ci' bcos of @juicycleff/nestjs-event-store
       - run: npm run lint
       - run: npm run build service-user
       - run: npm run build service-account
