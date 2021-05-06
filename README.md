@@ -31,7 +31,7 @@ npm install
 Start MySQL docker instance.
 
 ```bash
-docker run --name some-mysql -d -p 3306:3306 -e "MYSQL_ROOT_PASSWORD=Admin12345" -e "MYSQL_USER=usr" -e "MYSQL_PASSWORD=User12345" -e "MYSQL_DATABASE=development" bitnami/mysql:5.7.27
+docker run -d -e "MYSQL_ROOT_PASSWORD=Admin12345" -e "MYSQL_USER=usr" -e "MYSQL_PASSWORD=User12345" -e "MYSQL_DATABASE=development" -e "MYSQL_AUTHENTICATION_PLUGIN=mysql_native_password" -p 3306:3306 --name some-mysql bitnami/mysql:8.0.19
 ```
 
 Connect using MySQL docker instance command line.
@@ -61,7 +61,7 @@ DELETE FROM service_user.USER;
 ### Start EventStore
 
 ```bash
-docker run --name some-eventstore -d -p 2113:2113 -p 1113:1113 eventstore/eventstore
+docker run --name some-eventstore -d -p 2113:2113 -p 1113:1113 eventstore/eventstore:release-5.0.9
 ```
 
 Create the Persistent Subscriptions
@@ -183,4 +183,3 @@ Output :
   }
 }
 ```
-
