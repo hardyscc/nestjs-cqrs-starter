@@ -38,7 +38,7 @@
     "rimraf": "3.0.2",
     "rxjs": "7.3.0",
     "type-graphql": "1.1.1",
-    "typeorm": "0.2.35"
+    "typeorm": "0.2.36"
   },
   "devDependencies": {
     "@commitlint/cli": "13.1.0",
