@@ -17,6 +17,8 @@ A starter project which featuring advanced microservice pattern with GraphQL, ba
 
 ## Installation
 
+**Please use the `nest-v7` branch, the `master` branch still not working properly.**
+
 ```bash
 git clone -b nest-v7 https://github.com/hardyscc/nestjs-cqrs-starter.git <Your_Project_Name>
 cd <Your_Project_Name>
