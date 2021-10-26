@@ -29,7 +29,7 @@
     "@nestjs/typeorm": "8.0.2",
     "apollo-server-core": "3.4.0",
     "apollo-server-express": "3.4.0",
-    "graphql": "15.6.1",
+    "graphql": "15.7.0",
     "graphql-tools": "8.2.0",
     "mysql": "2.18.1",
     "node-eventstore-client": "0.2.18",
