@@ -41,8 +41,8 @@
     "typeorm": "0.2.45"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.2.3",
-    "@commitlint/config-conventional": "16.2.1",
+    "@commitlint/cli": "16.2.4",
+    "@commitlint/config-conventional": "16.2.4",
     "@nestjs/cli": "8.2.5",
     "@nestjs/schematics": "8.0.10",
     "@nestjs/testing": "8.4.4",
