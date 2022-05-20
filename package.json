@@ -30,7 +30,7 @@
     "apollo-server-core": "3.7.0",
     "apollo-server-express": "3.7.0",
     "graphql": "16.5.0",
-    "graphql-tools": "8.2.9",
+    "graphql-tools": "8.2.11",
     "mysql": "2.18.1",
     "node-eventstore-client": "0.2.18",
     "node-nats-streaming": "0.3.2",
