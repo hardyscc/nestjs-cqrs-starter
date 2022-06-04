@@ -2,7 +2,7 @@
 
 ## Description
 
-A starter project which featuring advanced microservice pattern with GraphQL, based on Domain-Driven Design (DDD) using the command query responsibility segregation (CQRS) design pattern.
+A starter project featuring an advanced microservice pattern with GraphQL, based on Domain-Driven Design (DDD) using the command query responsibility segregation (CQRS) design pattern.
 
 ## Technologies
 
@@ -53,7 +53,7 @@ GRANT ALL PRIVILEGES ON service_account.* TO 'usr'@'%';
 FLUSH PRIVILEGES;
 ```
 
-Clean-up all data if need to re-testing again
+Clean up all data if needed to re-testing again
 
 ```sql
 DELETE FROM service_account.ACCOUNT;
@@ -97,7 +97,7 @@ nest start gateway
 
 Goto GraphQL Playground - http://localhost:3000/graphql
 
-### Create user with a default saving account
+### Create a user with a default saving account
 
 ```graphql
 mutation {
@@ -166,7 +166,7 @@ http://localhost:3000/graphql
 
 Output :
 
-```json
+```JSON
 {
   "data": {
     "users": [
