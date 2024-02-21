@@ -20,8 +20,8 @@
     "test:e2e": "jest --config ./apps/gateway/test/jest-e2e.json"
   },
   "dependencies": {
-    "@juicycleff/nestjs-event-store": "3.1.18",
-    "@nestjs/common": "8.4.7",
+    "@juicycleff/nestjs-event-store": "4.0.0",
+    "@nestjs/common": "10.3.3",
     "@nestjs/core": "8.4.7",
     "@nestjs/cqrs": "8.0.5",
     "@nestjs/graphql": "9.1.2",
